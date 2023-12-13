@@ -3,7 +3,7 @@
 ![Hack anyone's camera and get images](https://github.com/karthik-reddy4444/cam-hack/raw/main/files/banner.png)
 <h4 align="center"> Hack anyone's camera and get images!</h4>
 
-<p align="center">
+<p align="center"> 
     <img src="https://img.shields.io/badge/Version-1.5-blue?style=for-the-badge&color=blue">
     <img src="https://img.shields.io/github/stars/karthik-reddy4444/cam-hack?style=for-the-badge&color=magenta">
     <img src="https://img.shields.io/github/forks/karthik-reddy4444/cam-hack?color=cyan&style=for-the-badge&color=purple">
