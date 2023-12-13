@@ -2,7 +2,7 @@
 
 # ip.php by karthik
 # Author   : karthik
-# Github   : https://github.com/karthik-reddy4444
+# Github   : https://github.com/karthik-reddy4444 
 # Email    : maramkarthik21@gmail.com
 
 error_reporting(E_ERROR | E_PARSE);
