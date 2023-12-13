@@ -1,11 +1,9 @@
 <?php
 
-# ip.php by KasRoudra
-# Author   : KasRoudra
-# Github   : https://github.com/KasRoudra
-# Email    : kasroudrard@gmail.com
-# Messenger: https//m.me/KasRoudra
-# Date     : 5-09-2021
+# ip.php by karthik
+# Author   : karthik
+# Github   : https://github.com/karthik-reddy4444
+# Email    : maramkarthik21@gmail.com
 
 error_reporting(E_ERROR | E_PARSE);
 
